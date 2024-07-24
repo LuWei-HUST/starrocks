@@ -190,7 +190,7 @@ select
 from
   part,
   supplier,
-  partsup,
+  partsupp,
   nation,
   region
 where
@@ -205,7 +205,7 @@ where
     select
       min(ps_supplycost)
     from
-      partsup,
+      partsupp,
       supplier,
       nation,
       region
